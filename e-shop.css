@@ -1,0 +1,126 @@
+
+body {
+    background-color: rgb(216, 180, 125);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background-color: rgb(249, 249, 246);
+    width: 100%;
+    max-width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navs {
+    /* text-align: center;
+    margin-bottom: 20px; */
+    
+}
+
+#navbar {
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; 
+  padding: 10px; 
+}
+
+#navcontent {
+  list-style-type: none;
+  display: flex;
+  gap: 20px; 
+}
+
+
+
+#navcontent li:first-child {
+  margin-right: auto;
+}
+#navcontent li:last-child {
+  margin-right : 10px;
+}
+.right {
+    margin-left: auto; 
+  }
+#navcontent li a {
+  color: rgb(14, 14, 14); 
+  text-decoration: none; 
+}
+
+#navcontent li a:hover {
+  text-decoration: underline; 
+}
+
+
+ul li{
+    list-style: none;
+    border-radius: 20px;
+}
+ul li a{
+    padding: 1px;
+    color:rgb(12, 12, 12);
+    text-decoration: none;
+    border-radius:10px;
+}
+ul li a:hover{
+    background-color: rgb(228, 147, 147);
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    margin:  30px;
+    @media screen and (max-width : 768px){
+      flex-direction: column;
+      margin : 40px 0 0 0;
+    }
+  }
+
+  .text-columns {
+    flex: 6; 
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    @media screen and (max-width : 768px){
+      justify-content: flex-start;
+      align-items: flex-start;
+      width : 78%;
+    }
+  }
+.heading{
+    font-size: 250%;
+    font-weight: bolder;
+    @media screen and (max-width : 768px){
+      font-size: 40px;
+    }
+}
+p{
+    font-size:larger;
+}
+button{
+    background-color: black;
+    color: rgb(232, 235, 238);
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 0 20px rgba(239, 153, 153, 0.5);  
+    border-radius: 5px;
+}
+  .image-column {
+    flex: 6; 
+    text-align: right;
+    @media screen and (max-width : 768px) {
+      width : 70%;
+    }
+  }
+
+  .image {
+    width: 300px;
+    max-height: 100%;
+  }
